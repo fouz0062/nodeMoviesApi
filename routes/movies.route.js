@@ -3,22 +3,22 @@ import express from "express";
 const router = express.Router();
 
 // Create - plural
-router.post("/movies", (req, res) => {
+router.post("/", (req, res) => {
   res.send("create all movies");
 });
 
 //read - plural
-router.get("/movies", (req, res) => {
+router.get("/", (req, res) => {
   res.send("get all movies");
 });
 
 //update - singular
-router.put("/movies/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   res.send("update a movie");
 });
 
 //delete - singular
-router.delete("/movies/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   res.send("delete a movie");
 });
 
