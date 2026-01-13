@@ -1,13 +1,12 @@
 import express from "express";
-
-const router = express.Router();
 import {
   readMovies,
   createMovie,
   updateMovie,
   deleteMovie,
-} from "../controllers/movies.controller.js";
+} from "../controllers/movies.controllers.js";
 
+const router = express.Router();
 // Create - plural
 router.post("/", createMovie);
 
