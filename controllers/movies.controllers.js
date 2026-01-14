@@ -2,7 +2,8 @@ const readMovies = (req, res) => {
   res.send("get all movies");
 };
 const createMovie = (req, res) => {
-  res.send("create all movies");
+  console.log(req.body);
+  return res.json(req.body);
 };
 const updateMovie = (req, res) => {
   res.send("update a movie");

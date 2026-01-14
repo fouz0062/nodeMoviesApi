@@ -13,6 +13,12 @@ app.get("/", (req, res) => {
 });
 
 //CRUD operations
+// using middleware for postman to read the data we sent
+// for raw json data
+app.use(express.json());
+// for form data
+app.use(express.urlencoded({ extended: true }));
+
 // Mount the movie routes
 app.use("/movies", movieRoutes);
 
