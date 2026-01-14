@@ -1,6 +1,11 @@
 import movie from "../models/movie.model.js";
-const readMovies = (req, res) => {
-  res.send("get all movies");
+const readMovies = async (req, res) => {
+  try {
+    const movies = await movie.find();
+    return res.status(200).json(movies);
+  } catch (error) {
+    return res.status(400).json({ message: error.message });
+  }
 };
 const createMovie = async (req, res) => {
   const newMovie = new movie({
