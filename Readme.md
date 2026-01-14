@@ -10,6 +10,9 @@ movies api project using `MERN stack`
 4. `git add .`
 5. `git commit -m "first commit"`
 6. `git push -u origin main or git push`
+7. `npm i dotenv`
+8. `npm install mongoose`
+9. `npm i nodemon`
 
 ### Database options
 
